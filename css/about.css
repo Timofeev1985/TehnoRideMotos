@@ -1,0 +1,288 @@
+/* Заголовок Н1 */
+.about-hero {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.about-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.about-hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+
+.about-hero-title {
+    font-size: 43px;
+    font-weight: bold;
+    color: #333333;
+    margin: 0;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.about-hero-title span {
+    font-size: 43px;
+    font-weight: bold;
+    color: #E6762A;
+    margin: 0;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+    background: #ffffff;
+    padding: 12px 0;
+    margin-top: 10px;
+}
+
+.breadcrumbs .container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.breadcrumb-link {
+    font-size: 14px;
+    color: #666666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.breadcrumb-link:hover {
+    color: #F38337;
+}
+
+.breadcrumb-separator {
+    font-size: 14px;
+    color: #999999;
+}
+
+.breadcrumb-active {
+    font-size: 14px;
+    color: #ED5F20;
+    font-weight: 400;
+}
+
+/* Заголовок с текстом */
+.about-content {
+    margin-top: 50px;
+    background: #ffffff;
+}
+
+.about-content-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #E6762A;
+    letter-spacing: 1px;
+}
+
+.about-content-text p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.8;
+    margin-top: 18px;
+    max-width: 100%;
+}
+
+.about-divider {
+    width: 100%;
+    max-width: 1000px;
+    height: 1px;
+    background: #d9d9d9;
+    margin: 0 0 20px 0;
+}
+
+.about-content-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.about-brand {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: 1px;
+}
+
+.about-site {
+    font-size: 16px;
+    color: #666;
+    margin-top: 4px;
+}
+
+/* Фото */
+.about-image {
+    margin-top: 50px;
+    background: #ffffff;
+}
+
+.about-image .container {
+    max-width: 1408px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 1200px) {
+
+    .about-content-text p {
+    font-size: 15px;
+}
+}
+@media (max-width: 900px) {
+
+    .about-hero-title {
+    font-size: 35px;
+}
+.about-hero-title span{
+    font-size: 35px;
+}
+.about-content-title {
+    font-size: 30px;
+}
+}
+@media (max-width: 750px) {
+    .about-hero {
+    height: 120px;
+}
+    .about-image{
+        margin-bottom: 30px;
+}
+.about-hero-title {
+    font-size: 25px;
+}
+.about-hero-title span{
+    font-size: 25px;
+}
+.about-content-title {
+    font-size: 20px;
+}
+}
+
+@media (max-width: 448px) {
+
+    /* Заголовок Н1 */
+    .about-hero {
+        padding: 10px 12px 0;
+        height: auto;
+        min-height: 60px;
+    }
+
+    .about-hero-content {
+        margin-top: 10px;
+    }
+
+    .about-hero-title {
+        font-size: 22px;
+        letter-spacing: 0.5px;
+        line-height: 1.2;
+    }
+
+    .about-hero-title span {
+        font-size: 22px;
+    }
+
+    /* Хлебные крошки */
+    .breadcrumbs {
+        padding: 8px 12px;
+        margin-top: 6px;
+    }
+
+    .breadcrumbs .container {
+        gap: 6px;
+    }
+
+    .breadcrumb-link {
+        font-size: 12px;
+    }
+
+    .breadcrumb-separator {
+        font-size: 12px;
+    }
+
+    .breadcrumb-active {
+        font-size: 12px;
+    }
+
+    /* Заголовок с текстом */
+    .about-content {
+        margin-top: 20px;
+        padding: 0 12px 10px;
+    }
+
+    .about-content-title {
+        font-size: 20px;
+        margin: 8px 0;
+    }
+
+    .about-content-text p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-top: 12px;
+    }
+
+    .about-divider {
+        max-width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .about-content-footer {
+        margin-top: 6px;
+    }
+
+    .about-brand {
+        font-size: 15px;
+    }
+
+    .about-site {
+        font-size: 13px;
+    }
+
+    /* Фото */
+    .about-image {
+        margin-top: 20px;
+        padding: 0 12px 20px;
+    }
+
+    .about-image .container {
+        padding: 0;
+    }
+
+    .about-image img {
+        border-radius: 6px;
+    }
+
+}
